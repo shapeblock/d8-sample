@@ -786,3 +786,8 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $config_directories['sync'] = '../config/sync';
+if (getenv('TSURU_APPNAME')) {
+  if (file_exists($app_root . '/' . $site_path . '/settings.tsuru.php')) {
+    include $app_root . '/' . $site_path . '/settings.tsuru.php';
+  }
+}
