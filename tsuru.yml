@@ -1,8 +1,10 @@
 php:
+  interpretor:
+    name: fpm
   docroot: web
   version: 7.1
   frontend:
-    name: apache-mod-php
+    name: nginx
     options:
       modules:
         - rewrite
