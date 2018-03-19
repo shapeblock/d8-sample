@@ -2,12 +2,17 @@ php:
   docroot: web
   version: 7.1
   frontend:
-    name: apache
+    name: nginx
+  interpretor:
+    name: fpm
     options:
-      vhost_file: vhost.conf
-      modules:
-        - rewrite
-        - proxy
-        - proxy_fcgi
+      extensions:
+        - php-mysql
+        - php-mbstring
+        - php-curl
+        - php-xml
+        - php-gd
+        - php-zip
+
     
 
