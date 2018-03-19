@@ -6,7 +6,7 @@ php:
   interpretor:
     name: fpm
     options:
-      vhost_file: vhost.conf
+      vhost_file: ./vhost.conf
       extensions:
         - php-mysql
         - php-mbstring
