@@ -1,0 +1,8 @@
+php:
+  version: 7.1
+  frontend:
+    name: apache-mod-php
+    options:
+      modules:
+        - rewrite
+
