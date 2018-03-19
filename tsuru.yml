@@ -1,12 +1,7 @@
 php:
-  interpretor:
-    name: fpm
   docroot: web
   version: 7.1
   frontend:
     name: nginx
-    options:
-      modules:
-        - rewrite
   composer: true
 
