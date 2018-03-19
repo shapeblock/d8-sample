@@ -2,9 +2,9 @@
 $databases['default']['default'] = array (
    'database' => getenv('MYSQL_DATABASE_NAME'),
    'username' => getenv('MYSQL_USER'),
-   'password' => getenv('MYSQL_PASSWORD'),
+   'password' => getenv('MYSQL_ROOT_PASSWORD'),
    'host' => getenv('MYSQL_HOST'),
-   'port' => '3306',
+   'port' => getenv('MYSQL_PORT'),
    'driver' => 'mysql',
    'prefix' => '',
    'collation' => 'utf8mb4_general_ci',
