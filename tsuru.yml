@@ -2,6 +2,6 @@ php:
   docroot: web
   version: 7.1
   frontend:
-    name: nginx
+    name: apache
   composer: true
 
