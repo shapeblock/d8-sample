@@ -2,6 +2,8 @@ php:
   docroot: web
   version: 7.1
   frontend:
-    name: apache
+    name: nginx
+  interpretor:
+    name: fpm
   composer: true
 
